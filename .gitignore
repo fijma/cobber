@@ -1,0 +1,3 @@
+*.sublime*
+report/
+src/entelechy/logs/

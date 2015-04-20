@@ -1,0 +1,1 @@
+<?php // whatever we need to get the test suite going
