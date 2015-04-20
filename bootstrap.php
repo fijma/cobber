@@ -1,1 +1,5 @@
-<?php // whatever we need to get the test suite going
+<?php
+
+require_once 'src/cobber/cobber.php';
+
+?>
