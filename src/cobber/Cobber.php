@@ -1,7 +1,5 @@
 <?php
-/**
- * @package Cobber
- */
+
 namespace Cobber;
 
 /**
@@ -16,16 +14,31 @@ class Cobber
     protected $app;
 
     /**
+     * These are the middlewares we are going to run.
+     */
+    protected $middlewares;
+
+    /**
      * If $app is a closure, we wrap it in a Matey instance, otherwise we simply save it.
      */
-    public function __construct($app) {
-
+    public function __construct($app)
+    {
         if (is_callable($app)) {
             $app = new Matey($app);
         }
+        if (is_string($app)) {
+            $app = new $app();
+        }
 
         $this->app = $app;
-    
+    }
+
+    /**
+     * Add a middleware to the stack.
+     */
+    public function add($middleware)
+    {
+        $this->middlewares[] = $middleware;
     }
 
     /**
@@ -33,6 +46,9 @@ class Cobber
      */
     public function run()
     {
+        foreach($this->middlewares as $middleware) {
+            
+        }
     }
 
 }
