@@ -19,7 +19,9 @@ class Cobber
     protected $middlewares;
 
     /**
-     * If $app is a closure, we wrap it in a Matey instance, otherwise we simply save it.
+     * If $app is a closure, we wrap it in a Matey instance.
+     * If $app is a string, we instantiate it.
+     * Otherwise we just save it.
      */
     public function __construct($app)
     {
@@ -29,7 +31,6 @@ class Cobber
         if (is_string($app)) {
             $app = new $app();
         }
-
         $this->app = $app;
     }
 
@@ -46,9 +47,6 @@ class Cobber
      */
     public function run()
     {
-        foreach($this->middlewares as $middleware) {
-            
-        }
     }
 
 }
