@@ -8,6 +8,7 @@ use \Cobber\Cobber;
 class Digger extends Cobber
 {
     public function run() {
+        $this->build();
         return $this->app->call($_SERVER);
     }
 }
