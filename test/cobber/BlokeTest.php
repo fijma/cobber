@@ -1,6 +1,6 @@
 <?php
 
-use \Cobber\Bloke;
+use \fijma\Cobber\Bloke;
 
 class blokeTest extends PHPUnit_Framework_TestCase
 {

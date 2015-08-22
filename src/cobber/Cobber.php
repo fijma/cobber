@@ -1,6 +1,6 @@
 <?php
 
-namespace Cobber;
+namespace fijma\Cobber;
 
 /**
  * Builds the application stack, runs it, and outputs the results to the server.

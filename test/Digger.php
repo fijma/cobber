@@ -1,6 +1,6 @@
 <?php
 
-use \Cobber\Cobber;
+use \fijma\Cobber\Cobber;
 
 /**
  * Override the run function so we can inspect the results rather than send them to the browser.

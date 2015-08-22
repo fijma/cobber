@@ -1,6 +1,6 @@
 <?php
 
-use \Cobber\Cobber;
+use \fijma\Cobber\Cobber;
 
 class CobberTest extends PHPUnit_Framework_TestCase
 {

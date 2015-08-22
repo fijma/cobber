@@ -1,6 +1,6 @@
 <?php
 
-namespace Cobber;
+namespace fijma\Cobber;
 
 class Bloke
 {

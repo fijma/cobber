@@ -1,8 +1,6 @@
 <?php
-/**
- * @package Cobber
- */
-namespace Cobber;
+
+namespace fijma\Cobber;
 
 /**
  * Matey helps Cobber out by turning a closure into a valid Cobber app.
