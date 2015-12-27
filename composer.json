@@ -1,5 +1,5 @@
 {
-    "name": "fijma/Cobber",
+    "name": "fijma/cobber",
     "description": "A miniscule web framework for PHP, inspired by Rack.",
     "type": "library",
     "license": "MIT",
